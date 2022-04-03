@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Description } from './styles';
+import * as S from './styles';
 
 function Banner({ company }) {
   const [darkMode, setDarkMode] = useState(false);
@@ -7,10 +7,10 @@ function Banner({ company }) {
     setDarkMode((prev) => !prev);
   };
   return (
-    <Container isDark={darkMode}>
-      <Description>Hello {company}</Description>
+    <S.Container isDark={darkMode}>
+      <S.Description>Hello {company}</S.Description>
       <button onClick={switchDarkMode}>Switch Dark Mode</button>
-    </Container>
+    </S.Container>
   );
 }
 

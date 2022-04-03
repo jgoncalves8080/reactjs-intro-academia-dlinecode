@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Banner from './components/banner';
 import { Header } from './components/header';
+import GlobalStyles from './styles/globalStyles';
 
 function App() {
   const [username, setUsername] = useState('Felisberto');
@@ -60,6 +61,7 @@ function App() {
         />
         <button type="submit">Submit</button>
       </form>
+      <GlobalStyles />
     </>
   );
 }

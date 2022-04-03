@@ -1,5 +1,6 @@
 import React from 'react';
+import * as S from './styles';
 
 export function ListItem({ title }) {
-  return <li className="listItem">{title}</li>;
+  return <S.ListItem>{title}</S.ListItem>;
 }
